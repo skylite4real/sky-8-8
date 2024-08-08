@@ -1,0 +1,81 @@
+.manage-content-section {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's on top */
+    overflow: auto;
+}
+
+.manage-content-section .close-manage-content {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.manage-content-section .manage-content-body {
+    padding: 20px; /* Adjust as needed */
+}
+
+.line-of-my-content {
+    width: 100% !important;
+    border: 1px solid #ccc;
+}
+
+.header-of-my-content {
+    font-weight: solid;
+    color: #333;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Tab styles */
+
+/* Tab styles */
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-videos, .tab-shorts, .tab-posts {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, border-bottom 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.tab-videos:hover, .tab-shorts:hover, .tab-posts:hover {
+    background-color: #ddd;
+}
+
+.tab-videos.active, .tab-shorts.active, .tab-posts.active {
+    background-color: #ccc;
+    border-bottom: 3px solid #000; /* Active tab with a solid border below */
+}
+
+.content-videos, .content-shorts, .content-posts {
+    display: none;
+    padding: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.content-videos.active, .content-shorts.active, .content-posts.active {
+    display: block;
+}
